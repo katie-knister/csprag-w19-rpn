@@ -18,5 +18,7 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate("3 4 ^")
         self.assertEqual(81, result)
 
+if __name__ == "__main__":
+    unittest.main()
 #TestBasics tb;
 #tb.test_add() ==> TestBasics.test_add(tb)
