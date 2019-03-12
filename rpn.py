@@ -2,6 +2,7 @@
 
 import operator
 
+import readline
 
 operators = {
         '+': operator.add,
