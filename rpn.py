@@ -12,7 +12,7 @@ operators = {
         '*': operator.mul,
         '/': operator.truediv,
         '^': operator.pow,
-       # '%': operator.mod,
+        '%': operator.mod,
 }
 def calculate(myarg):
     #colors = bg('rosy_brown') + fg('sea_green_2')
