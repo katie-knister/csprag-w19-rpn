@@ -3,6 +3,7 @@ python:
   - "3.5"
 install:
   - pip install python-coveralls
+  - pip install colored --upgrade
 script: 
         - python3 test_rpn.py
         - python -m coverage run test_rpn.py
