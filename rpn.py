@@ -4,7 +4,7 @@ import operator
 
 import readline
 
-#from colored import fg, bg
+from colored import fg, bg
 
 operators = {
         '+': operator.add,
@@ -16,7 +16,7 @@ operators = {
        # '-': operator.neg,
 }
 def calculate(myarg):
-    #colors = bg('rosy_brown') + fg('sea_green_2')
+    colors = bg('rosy_brown') + fg('sea_green_2')
     stack = list()
     for token in myarg.split():
         try:
@@ -28,8 +28,8 @@ def calculate(myarg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
-            print(stack)
-#        print(colors + stack)
+           # print(stack)
+            print(colors + stack)
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
