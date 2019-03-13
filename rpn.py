@@ -4,6 +4,8 @@ import operator
 
 import readline
 
+import colored
+
 from colored import fg, bg
 
 operators = {
